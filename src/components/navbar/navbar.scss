@@ -1,0 +1,54 @@
+.navbar {
+    background-color: white;
+    display: flex;
+    //   justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px 20px;
+  
+    .navbar-left {
+      display: flex;
+      flex: 1;
+  
+      .navbar-brand {
+        font-weight: bold;
+        font-weight: 700;
+        font-size: 32px;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+      img {
+          margin-left: 30px;
+      }
+    }
+  }
+  
+  .navbar-middle {
+    flex: 2;
+      margin-left: 80px;
+    .navbar-menu {
+      list-style-type: none;
+      display: flex;
+      // justify-content: space-between;
+       li {
+        margin-right: 100px;
+        a{
+            text-decoration: none;
+            color: black;
+            font-weight: 600;
+        }
+      }
+    }
+  }
+  
+  .navbar-right {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 40px;
+     svg {
+        margin-left: 35px;
+      }
+  }
+  
+ 
