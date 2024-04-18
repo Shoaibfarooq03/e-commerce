@@ -1,6 +1,21 @@
 import "./navbar.scss";
-
+import { useNavigate } from "react-router-dom";
 const Navbar = () => {
+  const navigate = useNavigate();
+
+  const handleHome=()=>{
+    navigate("/home")
+  }
+  const handleShop=()=>{
+    navigate("/shop");
+  }
+
+  const handleAbout=()=>{
+    navigate("/about");
+  }
+  const handleContact=()=>{
+    navigate("/contact");
+  }
   return (
     <div className="navbar">
       <div className="navbar-left">
@@ -10,16 +25,16 @@ const Navbar = () => {
       <div className="navbar-middle">
         <ul className="navbar-menu">
           <li>
-            <a href="#">Home</a>
+            <a onClick={handleHome}>Home</a>
           </li>
           <li>
-            <a href="#">Shop</a>
+            <a onClick={handleShop}>Shop</a>
           </li>
           <li>
-            <a href="#">About</a>
+            <a  onClick={handleAbout}>About</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a onClick={handleContact}>Contact</a>
           </li>
         </ul>
       </div>

@@ -1,0 +1,451 @@
+.shops {
+  .headerImg {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+      width: 1583px;
+      height: 316px;
+    }
+
+    h2 {
+      position: absolute;
+      top: 37%;
+      transform: translateY(-50%);
+      color: #000000;
+      font-size: 48px;
+      font-weight: 500;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .breadcrumb {
+      position: absolute;
+      top: 63%; /* Adjust the value to match the desired spacing */
+      color: #666666;
+      font-size: 18px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+
+      .bold {
+        font-size: 18px;
+        font-weight: 500;
+        color: #000000;
+      }
+      .hifen {
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-weight: 600;
+        color: #000000;
+      }
+      .normal {
+        font-size: 16px;
+        font-weight: 300;
+        color: #000000;
+      }
+    }
+  }
+
+  .smallcontainer {
+    position: absolute;
+    top: 53%;
+    width: 1583px;
+    height: 100px;
+    background-color: #f9f1e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left-side {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 70px;
+
+      .svg1 {
+        width: 25px;
+        height: 25px;
+        margin-right: 10px;
+        margin-left: 20px;
+      }
+
+      .svg2 {
+        width: 25px;
+        height: 25px;
+        margin-right: 20px;
+        margin-left: 30px;
+      }
+
+      .svg3 {
+        width: 25px;
+        height: 25px;
+        margin-right: 20px;
+      }
+
+      .svg4 {
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+      }
+
+      span {
+        font-weight: 600;
+        font-size: 20px;
+        color: #000000;
+      }
+
+      .entries {
+        margin-left: 0px; /* Add margin-left for spacing between span and div */
+        font-size: 16px;
+        color: #000000;
+        font-weight: 600;
+      }
+    }
+    .right-side {
+      display: flex;
+      align-items: center;
+      margin-right: 100px;
+
+      .show-text {
+        font-weight: 500;
+        font-size: 20px;
+        color: #000000;
+        margin-right: 10px; /* Add spacing between "Show:" text and counter box */
+      }
+
+      .counter-box {
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 55px; /* Adjust width as needed */
+        height: 55px; /* Adjust height as needed */
+        background-color: white;
+        border: 1px solid white; /* Add border for the box */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          font-size: 18px;
+          font-weight: bold;
+          color: #9f9f9f; /* Change text color as needed */
+        }
+      }
+      .show-text1 {
+        font-weight: 500;
+        font-size: 20px;
+        color: #000000;
+        margin-left: 25px; /* Add spacing between "Show:" text and counter box */
+      }
+
+      .counter-box1 {
+        margin-top: 5px;
+        margin-left: 30px;
+        width: 185px; /* Adjust width as needed */
+        height: 55px; /* Adjust height as needed */
+        background-color: white;
+        border: 1px solid white; /* Add border for the box */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          font-size: 18px;
+          font-weight: bold;
+          color: #9f9f9f; /* Change text color as needed */
+        }
+      }
+    }
+  }
+
+  .productcontainer {
+    margin-top: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 60px;
+
+      .card {
+        position: relative;
+        width: 285px;
+        height: 446px;
+        margin: 10px;
+        border: 1px solid #ccc;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .overlay1 {
+          display: none;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #3a3a3a;
+          opacity: 0.7;
+          border-radius: 5px;
+          .add-to-cart {
+            width: 202px;
+            height: 48px;
+            background-color: #ffffff;
+            border: 1px solid #ffffff;
+            margin-top: 185px;
+            color: #b88e2f;
+            font-weight: 600;
+            font-size: 16px;
+          }
+          .icons {
+            display: flex;
+            align-items: center;
+            margin-left: 10px;
+            margin-top: 10px;
+            gap: 3px;
+
+            svg {
+              fill: #ffffff;
+              width: 16px;
+              height: 16px;
+              margin-right: 5px;
+            }
+
+            span {
+              color: #ffffff;
+              font-size: 16px;
+              font-weight: 600;
+              margin-left: 8px;
+              margin-right: 10px;
+            }
+          }
+        }
+
+        &:hover .overlay1 {
+          display: block;
+        }
+
+        .image {
+          img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+          }
+        }
+
+        .info {
+          padding: 10px;
+          background-color: #f4f5f7;
+          border-bottom-left-radius: 5px;
+          border-bottom-right-radius: 5px;
+
+          p {
+            margin-right: 130px;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+              sans-serif;
+            font-weight: 600;
+            color: #3a3a3a;
+            font-size: 24px;
+            margin-top: 10px;
+          }
+          .span {
+            margin-right: 130px;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+              sans-serif;
+            font-weight: 500;
+            color: #898989;
+            font-size: 15px;
+            margin-top: -15px;
+          }
+          .price {
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+              sans-serif;
+            font-weight: 600;
+            color: #3a3a3a;
+            font-size: 20px;
+            margin-left: 10px;
+          }
+        }
+
+        .badge {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background-color: rgb(231, 127, 127);
+          color: #ffffff;
+          border-radius: 70px;
+          border: 2px solid rgb(231, 127, 127);
+          padding: 5px 10px;
+          font-size: 14px;
+          font-weight: bold;
+        }
+
+        .greenbadge {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background-color: rgb(108, 168, 196);
+          color: #ffffff;
+          border-radius: 70px;
+          border: 2px solid rgb(108, 168, 196);
+          padding: 5px 10px;
+          font-size: 14px;
+          font-weight: bold;
+        }
+      }
+    }
+
+    .productbtn {
+      button {
+        margin-top: 25px;
+        width: 245px;
+        height: 48px;
+        border: 1px solid #b88e2f;
+        margin-bottom: 15px;
+        color: #b88e2f;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        background-color: #ffffff;
+        cursor: pointer;
+      }
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 45px;
+      gap: 20px;
+      .page1 {
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 60px;
+        height: 60px;
+        background-color: #b88e2f;
+        border: 1px solid #b88e2f;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          font-size: 18px;
+          font-weight: bold;
+          color: #ffffff;
+        }
+      }
+      .page2 {
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 60px;
+        height: 60px;
+        background-color: #f9f1e7;
+        border: 1px solid #f9f1e7;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          font-size: 18px;
+          font-weight: bold;
+          color: #000000;
+        }
+      }
+      .page3 {
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 60px;
+        height: 60px;
+        background-color: #f9f1e7;
+        border: 1px solid #f9f1e7;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          font-size: 18px;
+          font-weight: bold;
+          color: #000000;
+        }
+      }
+      .page4 {
+        margin-top: 5px;
+        margin-left: 10px;
+        width: 98px;
+        height: 60px;
+        background-color: #f9f1e7;
+        border: 1px solid #f9f1e7;
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          font-size: 18px;
+          font-weight: 400;
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .supportcontainer {
+    width: 1583px;
+    height: 270px;
+    background-color: #faf3ea;
+    margin-top: 60px;
+    margin-bottom: -250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+    .support-item {
+      display: flex;
+      align-items: center;
+      width: 200px; 
+      margin-left: 100px;
+    }
+  
+    svg {
+      width: 50px;
+      height: 50px;
+      margin-right: 250px; 
+      margin-left: 70px;
+    }
+  
+    .support-text {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  
+    .title {
+      font-size: 25px;
+      font-weight: 600;
+      margin-left: 130px;
+      margin-top: -60px;
+      color: #242424;
+    }
+  
+    h3 {
+      font-size: 20px;
+      font-weight: 500;
+      // margin: 0;
+      color: #898989;
+      margin-bottom: 0px;
+      margin-left: 130px;
+      margin-top: 0px;
+
+    }
+  }
+  
+}
