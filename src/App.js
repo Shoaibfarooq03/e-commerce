@@ -1,10 +1,11 @@
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Navbar from "./pages/navbar/navbar";
+import Navbar from "./components/navbar/navbar";
 import Home from "./pages/home/home";
-import Footer from "./pages/footer/footer";
+import Footer from "./components/footer/footer";
 import Shop from "./pages/shop/shop";
+import Detail from "./pages/detail-product/detail";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/product-detail" element={<Detail />} />
         </Routes>
         <Footer/>
       </div>
