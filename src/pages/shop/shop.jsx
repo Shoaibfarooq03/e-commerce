@@ -1,6 +1,13 @@
 import "./shop.scss";
-
+import { useNavigate } from "react-router-dom";
 const Shop = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = ()=>{
+    navigate("/product-detail")
+  }
+
   const renderBadge = () => {
     return <div className="badge">-50%</div>;
   };
@@ -99,7 +106,7 @@ const Shop = () => {
           </div>
         </div>
         <div class="productcontainer">
-          <div class="cards">
+          <div class="cards" onClick={handleClick}>
             <div class="card">
               <div class="">{renderBadge()}</div>
               <div class="overlay1">
@@ -325,7 +332,7 @@ const Shop = () => {
               </div>
             </div>
           </div>
-          <div class="cards">
+          <div class="cards" onClick={handleClick}>
             <div class="card">
               <div class="">{renderBadge()}</div>
               <div class="overlay1">
@@ -551,7 +558,7 @@ const Shop = () => {
               </div>
             </div>
           </div>
-          <div class="cards">
+          <div class="cards" onClick={handleClick}>
             <div class="card">
               <div class="">{renderBadge()}</div>
               <div class="overlay1">
