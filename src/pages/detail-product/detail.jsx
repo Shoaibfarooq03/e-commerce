@@ -1,6 +1,12 @@
 import { useNavigate } from "react-router-dom";
 import "./detail.scss";
 const Detail = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick=()=>{
+    navigate("/product-comparison")
+  }
   const renderBadge = () => {
     return <div className="badge">-50%</div>;
   };
@@ -193,7 +199,7 @@ const Detail = () => {
               <button className="custom-button2">
                 <span>Add to Cart</span>
               </button>
-              <button className="custom-button3">
+              <button className="custom-button3" onClick={handleClick}>
                 <svg
                   width="12"
                   height="12"

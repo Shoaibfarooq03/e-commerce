@@ -6,6 +6,7 @@ import Home from "./pages/home/home";
 import Footer from "./components/footer/footer";
 import Shop from "./pages/shop/shop";
 import Detail from "./pages/detail-product/detail";
+import Comparison from "./pages/comparison/comparison";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/product-detail" element={<Detail />} />
+          <Route path="/product-comparison" element={<Comparison />} />
         </Routes>
         <Footer/>
       </div>
