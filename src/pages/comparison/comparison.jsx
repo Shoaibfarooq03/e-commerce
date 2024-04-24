@@ -1,6 +1,12 @@
 import "./comparison.scss";
-
+import { useNavigate } from "react-router-dom";
 const Comparison = () => {
+
+  const navigate = useNavigate();
+
+  const handleClick = () =>{
+    navigate('/cart')
+  }
   return (
     <>
       <div className="comparisoncontainer">
@@ -356,7 +362,7 @@ const Comparison = () => {
                   <br /> 1 Year Warranty
                 </p>
               </div>
-              <button>Add to Cart</button>
+              <button onClick={handleClick}>Add to Cart</button>
             </div>
             <svg
               width="1"
@@ -403,7 +409,7 @@ const Comparison = () => {
                   <br /> 6 Months Warranty
                 </p>
               </div>
-              <button>Add to Cart</button>
+              <button  onClick={handleClick}>Add to Cart</button>
             </div>
             <svg
               width="1"

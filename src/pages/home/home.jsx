@@ -1,7 +1,11 @@
 import { useState } from "react";
 import "./home.scss";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+
+  const navigate = useNavigate();
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const images = ["/explore.png", "/explore2.png", "/living.png"];
@@ -9,6 +13,10 @@ const Home = () => {
   const handleClick = () => {
     setCurrentImageIndex((currentImageIndex + 1) % images.length);
   };
+
+const handleNavigate = () => {
+  navigate("/cart")
+}
 
   const renderBadge = () => {
     return <div className="badge">-50%</div>;
@@ -63,7 +71,7 @@ const Home = () => {
           <div className="card">
             <div className="">{renderBadge()}</div>
             <div className="overlay1">
-              <button className="add-to-cart">Add to Cart</button>
+              <button className="add-to-cart"onClick={handleNavigate}>Add to Cart</button>
               <div className="icons">
                 <svg
                   width="16"
@@ -119,7 +127,7 @@ const Home = () => {
           <div className="card">
             <div className="">{greenBadge()}</div>
             <div className="overlay1">
-              <button className="add-to-cart">Add to Cart</button>
+              <button className="add-to-cart"onClick={handleNavigate}>Add to Cart</button>
               <div className="icons">
                 <svg
                   width="16"
@@ -175,7 +183,7 @@ const Home = () => {
           <div className="card">
             <div className="">{greenBadge()}</div>
             <div className="overlay1">
-              <button className="add-to-cart">Add to Cart</button>
+              <button className="add-to-cart"onClick={handleNavigate}>Add to Cart</button>
               <div className="icons">
                 <svg
                   width="16"
@@ -231,7 +239,7 @@ const Home = () => {
           <div className="card">
             <div className="">{renderBadge()}</div>
             <div className="overlay1">
-              <button className="add-to-cart">Add to Cart</button>
+              <button className="add-to-cart"onClick={handleNavigate}>Add to Cart</button>
               <div className="icons">
                 <svg
                   width="16"
@@ -289,7 +297,7 @@ const Home = () => {
           <div className="card">
             <div className="">{renderBadge()}</div>
             <div className="overlay1">
-              <button className="add-to-cart">Add to Cart</button>
+              <button className="add-to-cart" onClick={handleNavigate}>Add to Cart</button>
               <div className="icons">
                 <svg
                   width="16"
@@ -345,7 +353,7 @@ const Home = () => {
           <div className="card">
             <div className="">{greenBadge()}</div>
             <div className="overlay1">
-              <button className="add-to-cart">Add to Cart</button>
+              <button className="add-to-cart" onClick={handleNavigate}>Add to Cart</button>
               <div className="icons">
                 <svg
                   width="16"
@@ -401,7 +409,7 @@ const Home = () => {
           <div className="card">
             <div className="">{greenBadge()}</div>
             <div className="overlay1">
-              <button className="add-to-cart">Add to Cart</button>
+              <button className="add-to-cart"onClick={handleNavigate}>Add to Cart</button>
               <div className="icons">
                 <svg
                   width="16"
@@ -457,7 +465,7 @@ const Home = () => {
           <div className="card">
             <div className="">{renderBadge()}</div>
             <div className="overlay1">
-              <button className="add-to-cart">Add to Cart</button>
+              <button className="add-to-cart"onClick={handleNavigate}>Add to Cart</button>
               <div className="icons">
                 <svg
                   width="16"
