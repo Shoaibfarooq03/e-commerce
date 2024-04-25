@@ -82,46 +82,56 @@
 
     .productbody {
       display: flex;
-      flex-direction: row;
-      // position: absolute;
-      // width: 817px;
-      // height: 55px;
-      // background-color: ;
-      margin-left: 140px;
+      justify-content: center; /* Horizontally center items */
       margin-top: 70px;
-      .items {
+    
+      .allcarts {
         display: flex;
+        flex-direction: column; /* Align items vertically */
         position: absolute;
-        left: 10%;
-        top: 79%;
-        gap: 80px;
-        span {
-          position: relative;
-          left: -6%;
-          font-size: 16px;
-          font-weight: 400;
-          color: #9f9f9f;
-          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-          margin-top: 25px;
-        }
-        .svg1 {
-          position: relative;
-          left: -4%;
-          margin-top: 22px;
-        }
-        p {
-          font-size: 16px;
-          font-weight: 500;
-          color: #000000;
-          margin-top: 23px;
-        }
-        .svg2 {
-          position: relative;
-          left: 1%;
-          margin-top: 22px;
+        right: 39%;
+        top: 75%;
+    
+        .items {
+          display: flex;
+          gap: 80px;
+          align-items: center; /* Align items horizontally */
+          margin-bottom: 20px; /* Add spacing between items */
+          
+          img {
+            display: flex;
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+          }
+    
+          span {
+            display: flex;
+            position: relative;
+            left: -5%;
+            font-size: 16px;
+            font-weight: 400;
+            color: #9f9f9f;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 0px;
+          }
+    
+          .svg1, .svg2 {
+            margin-top: 0px;
+            cursor: pointer;
+          }
+    
+          p {
+            font-size: 16px;
+            font-weight: 500;
+            color: #000000;
+            margin-top: 10px;
+          }
         }
       }
     }
+    
     .producttotal {
       // display: flex;
       position: absolute;
@@ -205,7 +215,7 @@
     width: 1583px;
     height: 270px;
     background-color: #faf3ea;
-    margin-top: 25px;
+    margin-top: 110px;
     margin-bottom: -250px;
     display: flex;
     justify-content: space-around;

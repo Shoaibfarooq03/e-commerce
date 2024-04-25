@@ -1,13 +1,26 @@
 import { useNavigate } from "react-router-dom";
 import "./cart.scss";
+import CartContext from "../../CartContext";
+import { useContext, useEffect, useState } from "react";
 
 const Cart = () => {
-
   const navigate = useNavigate();
+  const { cartItems, removeFromCart } = useContext(CartContext);
+  const [totalPrice, setTotalPrice] = useState(0);
 
-  const handleClick = () =>{
-    navigate('/checkout')
-  }
+  useEffect(() => {
+    let total = 0;
+    cartItems.forEach((item) => {
+      // Remove currency symbol and commas, then parse to float
+      const price = parseFloat(item.price.replace(/[^\d.]/g, ""));
+      total += price;
+    });
+    setTotalPrice(total);
+  }, [cartItems]);
+  
+  const handleClick = () => {
+    navigate("/checkout");
+  };
 
   return (
     <>
@@ -42,56 +55,62 @@ const Cart = () => {
             </div>
           </div>
           <div className="productbody">
-            <div className="items">
-              <img src="/sofa2.png" alt="" />
-              <span>Asgaard Sofa</span>
-              <span>250,000.00</span>
-              <svg
-                width="32"
-                height="32"
-                viewBox="0 0 32 32"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="svg1"
-              >
-                <rect
-                  x="0.5"
-                  y="0.5"
-                  width="31"
-                  height="31"
-                  rx="4.5"
-                  stroke="#9F9F9F"
-                />
-                <path
-                  d="M13.608 11.76V10.432H16.616V22H15.144V11.76H13.608Z"
-                  fill="black"
-                />
-              </svg>
-              <p>250,000.00</p>
-              <svg
-                width="22"
-                height="22"
-                viewBox="0 0 22 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="svg2"
-              >
-                <path
-                  d="M20.625 4H17.125V1.8125C17.125 0.847266 16.3402 0.0625 15.375 0.0625H6.625C5.65977 0.0625 4.875 0.847266 4.875 1.8125V4H1.375C0.891016 4 0.5 4.39102 0.5 4.875V5.75C0.5 5.87031 0.598437 5.96875 0.71875 5.96875H2.37031L3.0457 20.2695C3.08945 21.202 3.86055 21.9375 4.79297 21.9375H17.207C18.1422 21.9375 18.9105 21.2047 18.9543 20.2695L19.6297 5.96875H21.2812C21.4016 5.96875 21.5 5.87031 21.5 5.75V4.875C21.5 4.39102 21.109 4 20.625 4ZM15.1562 4H6.84375V2.03125H15.1562V4Z"
-                  fill="#B88E2F"
-                />
-              </svg>
+            <div className="allcarts">
+              {cartItems.map((item) => (
+                <div className="items" key={item.id}>
+                  <img src={item.image} alt={item.name} />
+                  <span>{item.name}</span>
+                  <span>{item.price}</span>
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 32 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="svg1"
+                  >
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="31"
+                      height="31"
+                      rx="4.5"
+                      stroke="#9F9F9F"
+                    />
+                    <path
+                      d="M13.608 11.76V10.432H16.616V22H15.144V11.76H13.608Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <p>{item.price}</p>
+                  <svg
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="svg2"
+                    onClick={() => removeFromCart(item.id)}
+                  >
+                    <path
+                      d="M20.625 4H17.125V1.8125C17.125 0.847266 16.3402 0.0625 15.375 0.0625H6.625C5.65977 0.0625 4.875 0.847266 4.875 1.8125V4H1.375C0.891016 4 0.5 4.39102 0.5 4.875V5.75C0.5 5.87031 0.598437 5.96875 0.71875 5.96875H2.37031L3.0457 20.2695C3.08945 21.202 3.86055 21.9375 4.79297 21.9375H17.207C18.1422 21.9375 18.9105 21.2047 18.9543 20.2695L19.6297 5.96875H21.2812C21.4016 5.96875 21.5 5.87031 21.5 5.75V4.875C21.5 4.39102 21.109 4 20.625 4ZM15.1562 4H6.84375V2.03125H15.1562V4Z"
+                      fill="#B88E2F"
+                    />
+                  </svg>
+                </div>
+              ))}
             </div>
           </div>
+
           <div className="producttotal">
             <h1>Cart Totals</h1>
             <div className="top">
               <p>SubTotal</p>
-              <span>Rs. 250,000.00</span>
+              <span>Rs. {totalPrice.toFixed(2)}</span>
             </div>
             <div className="bottom">
               <p>Total</p>
-              <span>Rs. 250,000.00</span>
+              <span>Rs. {totalPrice.toFixed(2)}</span>
             </div>
             <button onClick={handleClick}>Checkout</button>
           </div>
@@ -142,8 +161,8 @@ const Cart = () => {
               </defs>
             </svg>
             <div className="support-text">
-            <div className="title">Warranty Protection</div>
-            <h3>Over 2 years</h3>
+              <div className="title">Warranty Protection</div>
+              <h3>Over 2 years</h3>
             </div>
           </div>
           <div className="support-item3">
@@ -172,8 +191,8 @@ const Cart = () => {
               </defs>
             </svg>
             <div className="support-text">
-            <div className="title">Free Shipping</div>
-            <h3>Order over 150$ </h3>
+              <div className="title">Free Shipping</div>
+              <h3>Order over 150$ </h3>
             </div>
           </div>
           <div className="support-item4">
@@ -197,8 +216,8 @@ const Cart = () => {
               </defs>
             </svg>
             <div className="support-text">
-            <div className="title">24 / 7 Support</div>
-            <h3>Dedicated Support</h3>
+              <div className="title">24 / 7 Support</div>
+              <h3>Dedicated Support</h3>
             </div>
           </div>
         </div>
