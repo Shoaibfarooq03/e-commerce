@@ -2,22 +2,33 @@ import { useContext, useEffect, useState } from "react";
 import "./navbar.scss";
 import { useNavigate } from "react-router-dom";
 import CartContext from "../../CartContext";
+import { useSelector, useDispatch } from "react-redux";
+import { addToCart, removeFromCart } from "../../app-redux/cart/cartSlice"; 
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const { cartItems, removeFromCart } = useContext(CartContext);
+  // const { cartItems, removeFromCart } = useContext(CartContext);
 
   const [showOffcanvas, setShowOffcanvas] = useState(false);
-  const [totalPrice, setTotalPrice] = useState(0);
+  // const [totalPrice, setTotalPrice] = useState(0);
 
-  useEffect(() => {
-    let total = 0;
-    cartItems.forEach((item) => {
-      const price = parseFloat(item.price.replace(/[^\d.]/g, ""));
-      total += price * item.quantity;
-    });
-    setTotalPrice(total);
-  }, [cartItems]);
+  // useEffect(() => {
+  //   let total = 0;
+  //   cartItems.forEach((item) => {
+  //     const price = parseFloat(item.price.replace(/[^\d.]/g, ""));
+  //     total += price * item.quantity;
+  //   });
+  //   setTotalPrice(total);
+  // }, [cartItems]);
+
+  const dispatch = useDispatch();
+  const cartItems = useSelector((state) => state.cart);
+
+  const totalPrice = cartItems.reduce((total, item) => {
+    const price = parseFloat(item.price.replace(/[^\d.]/g, ""));
+    return total + price * item.quantity;
+  }, 0);
+
 
 
   const toggleOffcanvas = () => {
@@ -111,8 +122,7 @@ const Navbar = () => {
                       fill="none"
                       xmlns="http://www.w3.org/2000/svg"
                       className="cancel"
-                      onClick={() => removeFromCart(item.id)}
-
+                      onClick={() => dispatch(removeFromCart(item.id))}
                     >
                       <path
                         fill-rule="evenodd"

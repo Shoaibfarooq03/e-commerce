@@ -1,16 +1,30 @@
 import { useContext } from "react";
 import CartContext from "../../CartContext";
 import "./checkout.scss";
+import { useSelector, useDispatch } from "react-redux";
+import { removeFromCart, increaseQuantity, decreaseQuantity } from "../../app-redux/cart/cartSlice";
 
 const Checkout = () => {
 
-  const { cartItems } = useContext(CartContext);
+  // const { cartItems } = useContext(CartContext);
+  // let subtotal = 0;
+  // cartItems.forEach((item) => {
+  //   const price = parseFloat(item.price.replace(/[^\d.]/g, ""));
+  //   subtotal += price * item.quantity;
+  // });
+  // const total = subtotal;
+  const cartItems = useSelector((state) => state.cart); // Retrieve cart items from the Redux store
+  const dispatch = useDispatch();
+
   let subtotal = 0;
   cartItems.forEach((item) => {
     const price = parseFloat(item.price.replace(/[^\d.]/g, ""));
     subtotal += price * item.quantity;
   });
   const total = subtotal;
+
+
+
 
   return (
     <>

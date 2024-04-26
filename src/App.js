@@ -10,11 +10,13 @@ import Comparison from "./pages/comparison/comparison";
 import Cart from "./pages/cart/cart";
 import Checkout from "./pages/checkout/checkout";
 import { CartProvider } from "./CartContext"; 
+import { Provider } from "react-redux";
+import store from "./app-redux/store";
 
 function App() {
   return (
     <Router>
-      <CartProvider> 
+      <Provider store={store}> 
         <div className="App">
           <Navbar />
           
@@ -29,7 +31,7 @@ function App() {
           </Routes>
           <Footer/>
         </div>
-      </CartProvider> 
+      </Provider> 
     </Router>
   );
 }

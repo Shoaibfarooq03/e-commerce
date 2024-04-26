@@ -2,10 +2,12 @@ import { useContext, useState } from "react";
 import "./home.scss";
 import { useNavigate } from "react-router-dom";
 import CartContext from "../../CartContext";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../app-redux/cart/cartSlice";
 
 const Home = () => {
   const navigate = useNavigate();
-  const { addToCart } = useContext(CartContext);
+  // const { addToCart } = useContext(CartContext);
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -14,11 +16,17 @@ const Home = () => {
   const handleClick = () => {
     setCurrentImageIndex((currentImageIndex + 1) % images.length);
   };
+  const dispatch = useDispatch();
 
   const handleNavigate = (product) => {
-    addToCart(product);
+    dispatch(addToCart(product));
     navigate("/cart");
   };
+
+  // const handleNavigate = (product) => {
+  //   addToCart(product);
+  //   navigate("/cart");
+  // };
 
   const renderBadge = () => {
     return <div className="badge">-50%</div>;
@@ -35,7 +43,7 @@ const Home = () => {
       description: "Asgaard Family Sofa ",
       price: "Rs 2,500.000",
       image: "/product4.png",
-      quantity: "1",
+      quantity: 1,
     },
     {
       id: 2,
@@ -43,7 +51,7 @@ const Home = () => {
       description: "Stylish Cafe Chair",
       price: "Rs 500,000.0",
       image: "/product2.png",
-      quantity: "1",
+      quantity: 1,
     },
     {
       id: 3,
@@ -51,7 +59,7 @@ const Home = () => {
       description: "Luxuary Big Sofa",
       price: "Rs 1,500.000",
       image: "/product3.png",
-      quantity: "1",
+      quantity: 1,
     },
     {
       id: 4,
@@ -59,7 +67,7 @@ const Home = () => {
       description: "Comfortable Sofa",
       price: "Rs 100,000.0",
       image: "/product4.png",
-      quantity: "1",
+      quantity: 1,
     },
   ];
 
