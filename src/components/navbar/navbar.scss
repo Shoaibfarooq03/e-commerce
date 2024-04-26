@@ -13,8 +13,8 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999; // Ensure backdrop is behind offcanvas but above other content
-    transition: opacity 0.3s ease; // Smooth transition
+    z-index: 999; 
+    transition: opacity 0.3s ease; 
   }
 
   .navbar-left {
@@ -61,48 +61,6 @@
       margin-left: 35px;
     }
   }
-
-  // .modal-overlay {
-  //   position: absolute;
-  //   top: 0%;
-  //   left: 0;
-  //   width: 417px;
-  //   height: 746px;
-  //   background-color: rgba(0, 0, 0, 0.5);
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-
-  //   .modal {
-  //     background-color: white;
-  //     padding: 0;
-  //     border-radius: 5px;
-  //     width: 535px;
-  //     height: 280px;
-  //     margin-top: 90px;
-  //     margin-left: 540px;
-
-  //     .modal-header {
-  //       display: flex;
-  //       justify-content: center;
-  //       border-bottom: 1px solid #ccc; /* Add border */
-  //     }
-
-  //     .modal-body {
-  //       display: flex;
-  //       align-items: center;
-
-  //     }
-
-  //     .modal-footer {
-  //       display: flex;
-  //       justify-content: flex-end;
-  //       padding: 20px;
-  //       margin-top: 60px;
-
-  //     }
-  //   }
-  // }
 
   .offcanvas {
     position: fixed;
@@ -194,12 +152,9 @@
                 color: #b88e2f;
               }
               .cancel {
-                // margin-bottom: 20px;
-                // margin-left: 70px;
                 display: flex;
                 position: absolute;
                 left: 115%;
-                // top: 100%;
                 margin-top: -40px;
                 cursor: pointer;
               }

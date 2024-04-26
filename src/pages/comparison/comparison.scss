@@ -23,7 +23,7 @@
 
     .breadcrumb {
       position: absolute;
-      top: 63%; /* Adjust the value to match the desired spacing */
+      top: 63%; 
       color: #666666;
       font-size: 18px;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -52,7 +52,6 @@
 
   .comparison {
     width: 1483px;
-    // height: 2645px;
     background-color: #ffffff;
 
     .sofacontainer {
@@ -67,7 +66,6 @@
         margin-top: 40px;
         h2 {
           white-space: pre-line;
-          //   margin-bottom: 10px;
           font-size: 16px;
           line-height: 1.5;
           font-weight: 500;
@@ -114,7 +112,6 @@
         }
         .svg-container {
           display: flex;
-          // justify-content: space-between;
           gap: 12px;
           margin-top: 15px;
           margin-left: 0px;
@@ -168,7 +165,6 @@
         }
         .svg-container {
           display: flex;
-          // justify-content: space-between;
           gap: 12px;
           margin-top: 15px;
           margin-left: 2px;
@@ -221,9 +217,7 @@
             border: 1px solid #b88e2f;
             border-radius: 6px;
             background-color: #b88e2f;
-            // background-color: #fff;
-            color: #ffffff; // Text color
-            // width: 100%;
+            color: #ffffff; 
             width: 242px;
             height: 40px;
             font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -236,11 +230,6 @@
             &::-ms-expand {
               display: none;
             }
-            // .choose{
-            //     font-size: 84px;
-            //     font-weight: 600;
-            //     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            // }
           }
           .select-icon {
             position: absolute;
@@ -275,7 +264,6 @@
             font-size: 20px;
             line-height: 3.5;
             text-align: justify;
-            // margin-left: 30px;
             margin-left: 50px;
           }
         }
@@ -379,12 +367,10 @@
             line-height: 3.5;
             text-align: justify;
             margin-top: 80px;
-            // margin-left: 30px;
-            // margin-left: 10px;
+           
           }
         }
         button {
-          // display: flex;
           position: absolute;
           top: 100%;
           left: -5%;
@@ -424,7 +410,6 @@
             font-size: 20px;
             line-height: 3.5;
             text-align: justify;
-            // margin-left: 30px;
             margin-left: -10px;
             margin-top: 80px;
           }
@@ -446,12 +431,9 @@
             line-height: 3.5;
             text-align: justify;
             margin-top: 80px;
-            // margin-left: 30px;
-            // margin-left: 10px;
           }
         }
         button {
-          // display: flex;
           position: absolute;
           top: 100%;
           left: -5%;

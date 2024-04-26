@@ -9,12 +9,12 @@ import Detail from "./pages/detail-product/detail";
 import Comparison from "./pages/comparison/comparison";
 import Cart from "./pages/cart/cart";
 import Checkout from "./pages/checkout/checkout";
-import { CartProvider } from "./CartContext"; // Import the CartProvider
+import { CartProvider } from "./CartContext"; 
 
 function App() {
   return (
     <Router>
-      <CartProvider> {/* Wrap your entire application with the CartProvider */}
+      <CartProvider> 
         <div className="App">
           <Navbar />
           
@@ -29,7 +29,7 @@ function App() {
           </Routes>
           <Footer/>
         </div>
-      </CartProvider> {/* Close the CartProvider */}
+      </CartProvider> 
     </Router>
   );
 }

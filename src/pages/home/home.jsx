@@ -35,6 +35,7 @@ const Home = () => {
       description: "Asgaard Family Sofa ",
       price: "Rs 2,500.000",
       image: "/product4.png",
+      quantity: "1",
     },
     {
       id: 2,
@@ -42,6 +43,7 @@ const Home = () => {
       description: "Stylish Cafe Chair",
       price: "Rs 500,000.0",
       image: "/product2.png",
+      quantity: "1",
     },
     {
       id: 3,
@@ -49,6 +51,7 @@ const Home = () => {
       description: "Luxuary Big Sofa",
       price: "Rs 1,500.000",
       image: "/product3.png",
+      quantity: "1",
     },
     {
       id: 4,
@@ -56,6 +59,7 @@ const Home = () => {
       description: "Comfortable Sofa",
       price: "Rs 100,000.0",
       image: "/product4.png",
+      quantity: "1",
     },
   ];
 

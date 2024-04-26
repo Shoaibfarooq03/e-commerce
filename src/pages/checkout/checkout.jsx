@@ -1,6 +1,17 @@
+import { useContext } from "react";
+import CartContext from "../../CartContext";
 import "./checkout.scss";
 
 const Checkout = () => {
+
+  const { cartItems } = useContext(CartContext);
+  let subtotal = 0;
+  cartItems.forEach((item) => {
+    const price = parseFloat(item.price.replace(/[^\d.]/g, ""));
+    subtotal += price * item.quantity;
+  });
+  const total = subtotal;
+
   return (
     <>
       <div className="checkout">
@@ -147,8 +158,9 @@ const Checkout = () => {
               <p>Product</p>
               <span>SubTotal</span>
             </div>
-            <div className="top2">
-              <p>Asgaard Sofa </p>
+            {cartItems.map((item) => (
+            <div className="top2" key={item.id}>
+               <p>{item.name}</p>
               <svg
                 width="8"
                 height="9"
@@ -161,16 +173,18 @@ const Checkout = () => {
                   fill="black"
                 />
               </svg>
-              <h5>1</h5>
-              <span>Rs. 250,000.00</span>
+              <h5>{item.quantity}</h5>
+              <span>{item.price}</span>
+              
             </div>
+             ))}
             <div className="top3">
               <p>SubTotal</p>
-              <span>Rs. 250,000.00</span>
+              <span>Rs. {subtotal.toFixed(2)}</span>
             </div>
             <div className="top4">
               <p>Total</p>
-              <span>Rs. 250,000.00</span>
+              <span>Rs. {total.toFixed(2)}</span>
             </div>
             <svg
               width="630"

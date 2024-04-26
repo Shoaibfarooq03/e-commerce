@@ -5,19 +5,39 @@ import { useContext, useEffect, useState } from "react";
 
 const Cart = () => {
   const navigate = useNavigate();
-  const { cartItems, removeFromCart } = useContext(CartContext);
+  const { cartItems, removeFromCart, updateCart } = useContext(CartContext);
   const [totalPrice, setTotalPrice] = useState(0);
 
   useEffect(() => {
     let total = 0;
     cartItems.forEach((item) => {
-      // Remove currency symbol and commas, then parse to float
       const price = parseFloat(item.price.replace(/[^\d.]/g, ""));
-      total += price;
+      total += price * item.quantity;
     });
     setTotalPrice(total);
   }, [cartItems]);
+
+  const handleIncrease = (itemId) => {
+    const updatedCartItems = cartItems.map((item) => {
+      if (item.id === itemId) {
+        return { ...item, quantity: Number(item.quantity) + 1 }; 
+      }
+      return item;
+    });
+    updateCart(updatedCartItems);
+  };
   
+
+  const handleDecrease = (itemId) => {
+    const updatedCartItems = cartItems.map((item) => {
+      if (item.id === itemId && item.quantity > 1) {
+        return { ...item, quantity: item.quantity - 1 };
+      }
+      return item;
+    });
+     updateCart(updatedCartItems)
+  };
+
   const handleClick = () => {
     navigate("/checkout");
   };
@@ -61,27 +81,11 @@ const Cart = () => {
                   <img src={item.image} alt={item.name} />
                   <span>{item.name}</span>
                   <span>{item.price}</span>
-                  <svg
-                    width="32"
-                    height="32"
-                    viewBox="0 0 32 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="svg1"
-                  >
-                    <rect
-                      x="0.5"
-                      y="0.5"
-                      width="31"
-                      height="31"
-                      rx="4.5"
-                      stroke="#9F9F9F"
-                    />
-                    <path
-                      d="M13.608 11.76V10.432H16.616V22H15.144V11.76H13.608Z"
-                      fill="black"
-                    />
-                  </svg>
+                  <div className="quantity">
+                  <div class="box-minus"onClick={() => handleDecrease(item.id)}>-</div>
+                  <div className="box">{item.quantity}</div>
+                  <div class="box-plus"onClick={() => handleIncrease(item.id)}>+</div>
+                  </div>
                   <p>{item.price}</p>
                   <svg
                     width="22"

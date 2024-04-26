@@ -13,13 +13,11 @@ const Navbar = () => {
   useEffect(() => {
     let total = 0;
     cartItems.forEach((item) => {
-      // Remove currency symbol and commas, then parse to float
       const price = parseFloat(item.price.replace(/[^\d.]/g, ""));
-      total += price;
+      total += price * item.quantity;
     });
     setTotalPrice(total);
   }, [cartItems]);
-  
 
 
   const toggleOffcanvas = () => {
@@ -91,7 +89,7 @@ const Navbar = () => {
                 <div className="details">
                   <div className="heading">{item.name}</div>
                   <div className="info">
-                    <div className="num">1</div>
+                    <div className="num">{item.quantity}</div>
                     <svg
                       width="7"
                       height="9"

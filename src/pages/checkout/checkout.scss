@@ -60,8 +60,6 @@
       left: 9%;
       width: 600px;
       height: 1300px;
-      //   background-color: antiquewhite;
-
       h1 {
         display: flex;
         margin-top: 80px;
@@ -148,12 +146,10 @@
 
     .productdetail {
       display: flex;
-      // flex-direction: r;
       position: absolute;
       left: 45%;
       width: 800px;
       height: 1300px;
-      // background-color: red;
 
       .top1 {
         display: flex;
@@ -204,10 +200,11 @@
           font-weight: 400;
           color: #000000;
           font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-          margin-right: 350px; /* Gap of 100px to the right */
+          margin-right: 350px; 
         }
 
         span {
+          margin-left: 20px;
           font-size: 18px;
           font-weight: 400;
           color: #000000;
@@ -271,10 +268,10 @@
         position: absolute;
         top: 28%;
         left: 10%;
-        align-items: center; /* Center items vertically */
+        align-items: center; 
         
         svg {
-          margin-right: 5px; /* Add margin for spacing */
+          margin-right: 5px; 
         }
         
         span {
@@ -305,7 +302,7 @@
         margin-top: 20px;
       
         input[type="radio"] {
-          display: none; /* Hide default radio buttons */
+          display: none; 
         }
       
         label {
@@ -333,7 +330,7 @@
         }
       
         input[type="radio"]:checked + label::before {
-          background-color: #000000; /* Change background color when selected */
+          background-color: #000000; 
         }
       }
       .privacy{
