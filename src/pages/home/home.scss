@@ -1,10 +1,11 @@
+// @import "../../styles/responsive.scss";
 .home {
   position: relative;
 }
-.image-container {
-  position: relative;
-  display: inline-block;
-}
+// .image-container {
+//   position: relative;
+//   display: inline-block;
+// }
 
 .overlay {
   position: absolute;
@@ -23,6 +24,7 @@
     font-size: 18px;
     font-weight: 500;
   }
+
   .heading {
     margin-top: 20px;
     margin-left: -270px;
@@ -34,6 +36,7 @@
     display: inline;
     word-wrap: break-word;
   }
+
   .heading1 {
     margin-top: 0px;
     margin-left: -215px;
@@ -43,6 +46,7 @@
     font-size: 52px;
     color: #b88e2f;
   }
+
   p {
     margin-top: 20px;
     margin-right: 100px;
@@ -53,6 +57,7 @@
     color: #333333;
     font-weight: 500;
   }
+
   button {
     width: 222px;
     height: 74px;
@@ -65,12 +70,83 @@
   }
 }
 
+/* Media Queries  for overlay*/
+@media (max-width: 480px) {
+  .overlay {
+    position: absolute;
+    top: 4%;
+    left: 56%;
+    width: 640px;
+    height: 443px;
+    background-color: #fff3e3;
+    margin-top: -40px;
+  }
+}
+@media (min-width: 1px) and (max-width: 480px) {
+  .overlay {
+    position: absolute;
+    top: 4%;
+    left: 150%;
+    width: 640px;
+    height: 443px;
+    background-color: #fff3e3;
+    margin-top: -80px;
+  }
+}
+@media (min-width: 481px) and (max-width: 770px) {
+  .overlay {
+    position: absolute;
+    top: 4%;
+    left: 110%;
+    width: 640px;
+    height: 443px;
+    background-color: #fff3e3;
+    margin-top: -80px;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1024px) {
+  .overlay {
+    position: absolute;
+    top: 4%;
+    left: 79%;
+    width: 640px;
+    height: 443px;
+    background-color: #fff3e3;
+    margin-top: -60px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .overlay {
+    position: absolute;
+    top: 4%;
+    left: 65%;
+    width: 640px;
+    height: 443px;
+    background-color: #fff3e3;
+    margin-top: -60px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1583px) {
+  .overlay {
+    position: absolute;
+    top: 4%;
+    left: 56%;
+    width: 640px;
+    height: 443px;
+    background-color: #fff3e3;
+    margin-top: -60px;
+  }
+}
+
 .Imgcontainer {
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
 
-  .title {
+  .title1 {
     width: 100%;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
@@ -78,6 +154,8 @@
     font-weight: 700;
     color: #333333;
     margin-bottom: 10px;
+    white-space: nowrap;
+    display: block;
 
     p {
       margin-top: 1px;
@@ -88,6 +166,8 @@
       font-size: 20px;
       font-weight: 400;
       align-items: center;
+      white-space: nowrap;
+      display: block;
     }
   }
 
@@ -108,7 +188,6 @@
 
       .paragraph {
         position: absolute;
-        // bottom: 0;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
@@ -128,13 +207,83 @@
     }
   }
 }
+
+/* Media Queries for img container */
+@media (min-width: 1px) and (max-width: 480px) {
+  .title1,
+  .title1 p {
+    text-align: start;
+    margin-left: 500px;
+  }
+}
+@media (min-width: 481px) and (max-width: 770px) {
+  .title1,
+  .title1 p {
+    text-align: start;
+    margin-left: 500px;
+  }
+}
+
+@media (min-width: 771px) and (max-width: 1024px) {
+  .title1,
+  .title1 p {
+    text-align: center;
+    margin-left: 400px;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .title1,
+  .title1 p {
+    text-align: center;
+    margin-left: 400px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1583px) {
+  .title1,
+  .title1 p {
+    text-align: center;
+    margin-left: 200px;
+  }
+}
+
 .productcontainer {
   margin-top: 90px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: 1px) and (max-width: 480px) {
+    width: 100%;
+    align-items: stretch;
+    margin-left: 500px;
+  }
 
-  .title {
+  @media (min-width: 481px) and (max-width: 770px) {
+    width: 90%;
+    max-width: 600px;
+    margin-left: 400px;
+  }
+
+  @media (min-width: 771px) and (max-width: 1024px) {
+    width: 80%;
+    max-width: 800px;
+    margin-left: 350px;
+  }
+
+  @media (min-width: 1025px) and (max-width: 1200px) {
+    width: 70%;
+    max-width: 900px;
+    margin-left: 350px;
+  }
+
+  @media (min-width: 1201px) and (max-width: 1583px) {
+    width: 60%;
+    max-width: 1000px;
+    margin-left: 330px;
+  }
+
+  .title2 {
     width: 100%;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
@@ -142,6 +291,29 @@
     font-weight: 700;
     color: #3a3a3a;
     margin-bottom: 10px;
+    @media (min-width: 1px) and (max-width: 480px) {
+      width: 100%;
+    }
+
+    @media (min-width: 481px) and (max-width: 770px) {
+      width: 90%;
+      max-width: 600px;
+    }
+
+    @media (min-width: 771px) and (max-width: 1024px) {
+      width: 80%;
+      max-width: 800px;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1200px) {
+      width: 70%;
+      max-width: 900px;
+    }
+
+    @media (min-width: 1201px) and (max-width: 1583px) {
+      width: 60%;
+      max-width: 1000px;
+    }
   }
 
   .cards {
@@ -254,10 +426,10 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        background-color:#E97171;
+        background-color: #e97171;
         color: #ffffff;
         border-radius: 70px;
-        border: 2px solid #E97171;
+        border: 2px solid #e97171;
         padding: 5px 10px;
         font-size: 14px;
         font-weight: bold;
@@ -267,7 +439,7 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        background-color:#2EC1AC;
+        background-color: #2ec1ac;
         color: #ffffff;
         border-radius: 70px;
         border: 2px solid#2EC1AC;
@@ -404,16 +576,46 @@
       left: 70%;
     }
   }
-  .explore-end {
-    position: absolute;
-    left: 97%;
-    top: 64%;
-    img {
-      margin-top: 135px;
-      width: 50px;
-      height: 400px;
-    }
-  }
+  // .explore-end {
+  //   position: absolute;
+  //   top: 60%;
+  //   img {
+  //     margin-top: 90px;
+  //     width: 50px;
+  //     height: 400px;
+  //   }
+  
+  //   // Media Queries for explore end
+  //   @media (min-width: 1px) and (max-width: 480px) {
+  //     left: 325%;
+  //     margin-top: 600px;
+  //   }
+  //   @media (min-width: 481px) and (max-width: 770px) {
+  //     left: 199%;
+  //     margin-top: 560px;
+  //   }
+  
+  //   @media (min-width: 771px) and (max-width: 1024px) {
+  //     left: 154%;
+  //     margin-top: 180px;
+  //   }
+  
+  //   @media (min-width: 1025px) and (max-width: 1200px) {
+  //     left: 128%;
+  //     margin-top: 180px;
+
+  //   }
+  
+  //   @media (min-width: 1201px) and  (max-width: 1583px) {
+  //     left: 128%;
+  //     margin-top: 180px;
+  //   }
+  
+  //   @media (min-width: 1584px) {
+  //     left: 97%;
+  //   }
+  // }
+  
 }
 .furnitureImages {
   margin-top: 70px;
@@ -423,7 +625,7 @@
   width: 1583px;
   height: 600px;
 
-  .title1 {
+  .title5 {
     color: #616161;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
       sans-serif;
@@ -435,6 +637,11 @@
       font-weight: bold;
       color: #333333;
       margin-top: 5px;
+    }
+    @media (min-width: 1px) and (max-width: 1583px) {
+      .title5 {
+        text-align: center;
+      }
     }
   }
   .imgcontain {
@@ -501,4 +708,3 @@
     }
   }
 }
-

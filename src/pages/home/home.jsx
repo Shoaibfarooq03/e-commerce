@@ -85,7 +85,7 @@ const Home = () => {
         <button>BUY NOW</button>
       </div>
       <div className="Imgcontainer">
-        <div className="title">
+        <div className="title1">
           Browse The Range
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </div>
@@ -111,7 +111,7 @@ const Home = () => {
         </div>
       </div>
       <div className="productcontainer">
-        <div className="title">Our Products</div>
+        <div className="title2">Our Products</div>
         <div className="cards">
           {product.map((product) => (
             <div className="card" key={product.id}>
@@ -661,13 +661,13 @@ const Home = () => {
             />
           </svg>
         </div>
-        <div className="explore-end">
+        {/* <div className="explore-end">
           <img src={images[(currentImageIndex + 2) % images.length]} alt="" />{" "}
-        </div>
+        </div> */}
       </div>
 
       <div className="furnitureImages">
-        <div className="title1">
+        <div className="title5">
           Share your setup with
           <p>#FurniroFurniture</p>
         </div>
