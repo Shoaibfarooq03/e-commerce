@@ -142,13 +142,19 @@
           }
         }
       }
+      @media (max-width: 1583px) {
+        left: 2%; // Adjusted left margin
+        width: calc(100% - 200px); // Adjusted width
+      }
     }
 
     .productdetail {
       display: flex;
       position: absolute;
-      left: 45%;
-      width: 800px;
+      // left: 45%;
+      // width: 800px;
+      left: calc(35% + 100px);
+      width: calc(100% - 200px);
       height: 1300px;
 
       .top1 {
@@ -200,7 +206,7 @@
           font-weight: 400;
           color: #000000;
           font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-          margin-right: 350px; 
+          margin-right: 350px;
         }
 
         span {
@@ -268,12 +274,12 @@
         position: absolute;
         top: 28%;
         left: 10%;
-        align-items: center; 
-        
+        align-items: center;
+
         svg {
-          margin-right: 5px; 
+          margin-right: 5px;
         }
-        
+
         span {
           font-size: 16px;
           font-weight: 400;
@@ -281,16 +287,16 @@
           font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         }
       }
-      .text{
+      .text {
         display: flex;
         position: absolute;
         text-align: justify;
         top: 30%;
         left: 10%;
-        p{
-            color: #9F9F9F;
-            font-size: 16px;
-            font-weight: 400;
+        p {
+          color: #9f9f9f;
+          font-size: 16px;
+          font-weight: 400;
         }
       }
       .payment-method {
@@ -300,26 +306,26 @@
         top: 36%;
         left: 10%;
         margin-top: 20px;
-      
+
         input[type="radio"] {
-          display: none; 
+          display: none;
         }
-      
+
         label {
           display: flex;
           align-items: center;
           cursor: pointer;
           margin-bottom: 10px;
-          color: #9F9F9F;
+          color: #9f9f9f;
           font-size: 16px;
           font-weight: 500;
-          
+
           &:hover {
             text-decoration: none;
           }
-          
+
           &::before {
-            content: '';
+            content: "";
             display: inline-block;
             width: 10px;
             height: 10px;
@@ -328,37 +334,110 @@
             margin-right: 10px;
           }
         }
-      
+
         input[type="radio"]:checked + label::before {
-          background-color: #000000; 
+          background-color: #000000;
         }
       }
-      .privacy{
+      .privacy {
         display: flex;
         position: absolute;
         text-align: justify;
         top: 42%;
         left: 10%;
-        p{
-            color: #000000;
-            font-size: 16px;
-            font-weight: 400;
+        p {
+          color: #000000;
+          font-size: 16px;
+          font-weight: 400;
         }
       }
-      button{
+      button {
         position: absolute;
         top: 52%;
         left: 19%;
         width: 300px;
         height: 64px;
-        background-color:#ffffff;
+        background-color: #ffffff;
         border: 1px solid #000000;
         border-radius: 15px;
         color: #000000;
         font-size: 20px;
         font-weight: 400;
         cursor: pointer;
-        }
+      }
+      // Media queries for responsiveness
+      @media (max-width: 1583px) {
+        left: 40%;
+        width: calc(100% - 200px);
+      }
+
+      @media (max-width: 1200px) {
+        left: 42%;
+        width: calc(100% - 200px);
+      }
+
+      @media (max-width: 1100px) {
+        left: 46%;
+        width: calc(100% - 100px);
+      }
+
+      @media (max-width: 1030px) {
+        left: 50%;
+        width: calc(100% - 100px);
+      }
+
+      @media (max-width: 960px) {
+        left: 53%;
+        width: 100%;
+      }
+      @media (max-width: 900px) {
+        left: 55%;
+        width: 100%;
+      }
+      @media (max-width: 860px) {
+        left: 58%;
+        width: 100%;
+      }
+      @media (max-width: 830px) {
+        left: 63%;
+        width: 100%;
+      }
+      @media (max-width: 777px) {
+        left: 68%;
+        width: 100%;
+      }
+      @media (max-width: 710px) {
+        left: 75%;
+        width: 100%;
+      }
+      @media (max-width: 660px) {
+        left: 83%;
+        width: 100%;
+      }
+      @media (max-width: 600px) {
+        left: 92%;
+        width: 100%;
+      }
+      @media (max-width: 550px) {
+        left: 98%;
+        width: 100%;
+      }
+      @media (max-width: 510px) {
+        left: 108%;
+        width: 100%;
+      }
+      @media (max-width: 480px) {
+        left: 116%;
+        width: 100%;
+      }
+      @media (max-width: 445px) {
+        left: 127%;
+        width: 100%;
+      }
+      @media (max-width: 398px) {
+        left: 136%;
+        width: 100%;
+      }
     }
   }
 
