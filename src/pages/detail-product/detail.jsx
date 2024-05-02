@@ -147,8 +147,8 @@ const Detail = () => {
             </div>
             <p className="paragraph">
               Setting the bar as one of the loudest speakers in
-              <br /> its class, the Kilburn is a compact a well-balanced <br />{" "}
-              audio boasts Voice and extended highs for a sound.
+              <br /> its class and it is fully balanced
+            
             </p>
             <div className="size">Size</div>
             <div className="sizetypes">

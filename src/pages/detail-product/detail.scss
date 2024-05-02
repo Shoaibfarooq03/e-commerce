@@ -1,20 +1,21 @@
 .detail {
   .topbar {
     display: flex;
-    width: 100%; 
+    width: 100%;
     height: 100px;
     background-color: #f9f1e7;
-    justify-content: start; 
-    
+    justify-content: start;
+
     .breadcrumb {
-      position: relative; 
+      position: relative;
       top: 50%;
-      transform: translateY(-50%); 
-      display: flex; 
-      align-items: center; 
+      transform: translateY(-50%);
+      display: flex;
+      align-items: center;
       color: #666666;
       font-size: 18px;
-      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
       margin-left: 100px;
       .bold {
         font-size: 18px;
@@ -49,15 +50,7 @@
       }
     }
   }
-  
-  /* Media Queries */
-  @media (min-width: 1px) and (max-width: 480px) {
-    .topbar .breadcrumb {
-      font-size: 14px; 
-    }
-  }
 
-  
   .full {
     display: flex;
     width: 1583px;
@@ -91,7 +84,7 @@
       top: 30%;
       left: 45%;
       gap: 5px;
-
+      // padding-left: 10%;
       .heading {
         font-size: 42px;
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -364,7 +357,7 @@
           width: 100%;
 
           .data-label {
-            flex: 1; 
+            flex: 1;
             margin-right: 10px;
             font-weight: 500;
             font-size: 16px;
@@ -372,7 +365,7 @@
           }
 
           .data-value {
-            flex: 2; 
+            flex: 2;
             margin-right: 10px;
             font-weight: 500;
             font-size: 16px;
@@ -381,24 +374,64 @@
 
           .svgss {
             display: flex;
-            gap: 25px; 
+            gap: 25px;
           }
         }
+      }
+      @media (min-width: 1501px) and (max-width: 1585px) {
+        left: 45%;
+      }
+      @media (min-width: 1401px) and (max-width: 1500px) {
+        left: 47%;
+      }
+      @media (min-width: 1301px) and (max-width: 1400px) {
+        left: 50%;
+      }
+      @media (min-width: 1201px) and (max-width: 1300px) {
+        left: 53%;
+      }
+
+      @media (min-width: 1101px) and (max-width: 1200px) {
+        left: 56%;
+      }
+      @media (min-width: 1001px) and (max-width: 1100px) {
+        left: 63%;
+      }
+      @media (min-width: 901px) and (max-width: 1000px) {
+        left: 72%;
+      }
+      @media (min-width: 801px) and (max-width: 900px) {
+        left: 80%;
+      }
+      @media (min-width: 701px) and (max-width: 800px) {
+        left: 89%;
+      }
+      @media (min-width: 601px) and (max-width: 700px) {
+        left: 102%;
+      }
+      @media (min-width: 501px) and (max-width: 600px) {
+        left: 125%;
+      }
+      @media (min-width: 401px) and (max-width: 500px) {
+        left: 155%;
+      }
+      @media (min-width: 301px) and (max-width: 400px) {
+        left: 180%;
       }
     }
   }
 
   .descriptionsection {
     display: flex;
-    width: 1583px;
-    height: 650px;
+    width: 100%;
+    height: auto;
     background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     .centered-texts {
       display: flex;
-      position: relative;
-      top: 8%;
-      left: 30%;
       gap: 70px;
 
       .desc {
@@ -414,32 +447,140 @@
     }
 
     .additional-text {
-      display: flex;
-      position: absolute;
-      top: 152%;
-      left: 12%;
-      right: 12%;
+      width: 80vw;
+      text-align: center;
+      margin-top: 20px;
+      position: relative;
 
       p {
         font-size: 16px;
         font-weight: 500;
         color: #9f9f9f;
-        text-align: justify;
       }
     }
+
     .imagescontainer {
       display: flex;
       flex-direction: row;
-      position: absolute;
       gap: 30px;
-      top: 167%;
-      left: 7%;
+      margin-top: 20px;
+
       img {
         width: 665px;
         height: 350px;
       }
     }
+
+    // Media Queries
+   
   }
+  @media (min-width: 1501px) and (max-width: 1585px) {
+    .additional-text {
+      width: 70%;
+    }
+    .descriptionsection{
+      margin-left: 20px;
+    }
+  }
+  @media (min-width: 1401px) and (max-width: 1500px) {
+    .additional-text {
+      width: 65%;
+    }
+    .descriptionsection{
+      margin-left: 60px;
+    }
+  }
+  @media (min-width: 1301px) and (max-width: 1400px) {
+    .additional-text {
+      width: 60%;
+    }
+    .descriptionsection{
+      margin-left: 90px;
+    }
+  }
+  @media (min-width: 1201px) and (max-width: 1300px) {
+    .additional-text {
+      width: 55%;
+    }
+    .descriptionsection{
+      margin-left: 160px;
+    }
+  }
+
+  @media (min-width: 1101px) and (max-width: 1200px) {
+    .additional-text {
+      width: 50%;
+    }
+    .descriptionsection{
+      margin-left: 200px;
+    }
+  }
+  @media (min-width: 1001px) and (max-width: 1100px) {
+    .additional-text {
+      width: 45%;
+    }
+    .descriptionsection{
+      margin-left: 250px;
+    }
+  }
+  @media (min-width: 901px) and (max-width: 1000px) {
+    .additional-text {
+      width: 40%;
+    }
+    .descriptionsection{
+      margin-left: 300px;
+    }
+  }
+  @media (min-width: 801px) and (max-width: 900px) {
+    .additional-text {
+      width: 35%;
+    }
+    .descriptionsection{
+      margin-left: 350px;
+    }
+  }
+  @media (min-width: 701px) and (max-width: 800px) {
+    .additional-text {
+      width: 30%;
+    }
+
+    .descriptionsection{
+      margin-left: 400px;
+    }
+  }
+  @media (min-width: 601px) and (max-width: 700px) {
+    .additional-text {
+      width: 25%;
+    }
+    .descriptionsection{
+      margin-left: 450px;
+    }
+  }
+  @media (min-width: 501px) and (max-width: 600px) {
+    .additional-text {
+      width: 20%;
+    }
+    .descriptionsection{
+      margin-left: 500px;
+    }
+  }
+  @media (min-width: 401px) and (max-width: 500px) {
+    .additional-text {
+      width: 15%;
+    }
+    .descriptionsection{
+      margin-left: 550px;
+    }
+  }
+  @media (min-width: 350px) and (max-width: 400px) {
+    .additional-text {
+      width: 10%;
+    }
+    .descriptionsection{
+      margin-left: 550px;
+    }
+  }
+
   .linesvg {
     width: 1583px;
   }
