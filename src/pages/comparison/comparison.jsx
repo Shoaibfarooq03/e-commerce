@@ -332,21 +332,18 @@ const Comparison = () => {
             </svg>
             <div className="item1">
               <div className="general">
-                {/* <h2>General</h2> */}
                 <p>
                   1 Sectional Sofa <br /> TFCBLIGRBL6SRHS <br /> Solid Wood
                   <br /> L-Shaped
                 </p>
               </div>
               <div className="product">
-                {/* <h2>Product</h2> */}
                 <p>
                   Foam <br /> Bright Grey & Lion <br /> 280 KG
                   <br /> No
                 </p>
               </div>
               <div className="dimenssion">
-                {/* <h2>Dimenssions</h2> */}
                 <p>
                   265.32 cm <br /> 76 cm <br /> 169.7 cm
                   <br /> 50 KG <br />
@@ -355,7 +352,6 @@ const Comparison = () => {
                 </p>
               </div>
               <div className="warrenty">
-                {/* <h2>Warranty</h2> */}
                 <p>
                   1 Year Warranty
                   <br /> operations@Furniro.com <br /> Manufacturing Defect
