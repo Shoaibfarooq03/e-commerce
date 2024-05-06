@@ -1,6 +1,82 @@
 // @import "../../styles/responsive.scss";
 .home {
   position: relative;
+  img{
+    width: auto;
+    height: 652px;
+  }
+  @media (min-width: 1584px) and (max-width: 2434px) {
+    img{
+     width: 100%;
+    }
+   }
+  @media (min-width: 1501px) and (max-width: 1583px) {
+    img{
+      width: 110%;
+     }
+  }
+  @media (min-width: 1401px) and (max-width: 1500px) {
+    img{
+      width: 110%;
+     }
+  }
+  @media (min-width: 1301px) and (max-width: 1400px) {
+    img{
+      width: 115%;
+     }
+  }
+  @media (min-width: 1201px) and (max-width: 1300px) {
+    img{
+      width: 125%;
+     }
+  }
+
+  @media (min-width: 1101px) and (max-width: 1200px) {
+    img{
+      width: 135%;
+     }
+  }
+  @media (min-width: 1001px) and (max-width: 1100px) {
+    img{
+      width: 150%;
+     }
+  }
+  @media (min-width: 901px) and (max-width: 1000px) {
+    img{
+      width: 165%;
+     }
+  }
+  @media (min-width: 801px) and (max-width: 900px) {
+    img{
+      width: 185%;
+     }
+  }
+  @media (min-width: 701px) and (max-width: 800px) {
+    img{
+      width: 213%;
+     }
+  }
+  @media (min-width: 601px) and (max-width: 700px) {
+    img{
+      width: 255%;
+     }
+  }
+  @media (min-width: 501px) and (max-width: 600px) {
+    img{
+      width: 295%;
+     }
+  }
+  @media (min-width: 401px) and (max-width: 500px) {
+    img{
+      width: 375%;
+     }
+  }
+  @media (min-width: 350px) and (max-width: 400px) {
+    img{
+      width: 455%;
+     }
+  }
+
 }
 // .image-container {
 //   position: relative;
@@ -228,7 +304,7 @@
   .title1,
   .title1 p {
     text-align: center;
-    margin-left: 400px;
+    margin-left: 500px;
   }
 }
 
@@ -245,6 +321,66 @@
   .title1 p {
     text-align: center;
     margin-left: 200px;
+  }
+}
+@media (min-width: 1584px) and (max-width: 1700px) {
+  .title1,
+  .title1 p {
+    text-align: center;
+    margin-left: 60px;
+  }
+  .image-container{
+    margin-left: 30px;
+  }
+}
+@media (min-width: 1701px) and (max-width:1800px) {
+  .title1,
+  .title1 p {
+    text-align: center;
+    margin-left: 60px;
+  }
+  .image-container{
+    margin-left: 50px;
+  }
+}
+@media (min-width: 1801px) and (max-width:1900px) {
+  .title1,
+  .title1 p {
+    text-align: center;
+    margin-left: 60px;
+  }
+  .image-container{
+    margin-left: 70px;
+  }
+}
+@media (min-width: 1901px) and (max-width:2000px) {
+  .title1,
+  .title1 p {
+    text-align: center;
+    margin-left: 60px;
+  }
+  .image-container{
+    margin-left: 90px;
+  }
+}
+@media (min-width: 2001px) and (max-width:2100px) {
+  .title1,
+  .title1 p {
+    text-align: center;
+    margin-left: 60px;
+  }
+  .image-container{
+    margin-left: 120px;
+  }
+}
+@media (min-width: 2101px) and (max-width:2200px) {
+  .title1,
+  .title1 p {
+    text-align: center;
+    margin-left: 60px;
+  }
+  .image-container{
+    margin-left: 140px;
   }
 }
 
@@ -615,7 +751,90 @@
   //     left: 97%;
   //   }
   // }
-  
+  @media (min-width: 1584px) and (max-width: 2000px) {
+ width: 100%;
+ 
+ .explore-right{
+  margin-left: 130px;
+ }
+   }
+  @media (min-width: 1501px) and (max-width: 1583px) {
+   width: 110%;
+   .explore-right{
+    margin-left: 90px;
+   }
+  }
+  @media (min-width: 1401px) and (max-width: 1500px) {
+    width: 120%;
+    .explore-right{
+     margin-left: 100px;
+    }
+  }
+  @media (min-width: 1301px) and (max-width: 1400px) {
+ 
+  }
+  @media (min-width: 1201px) and (max-width: 1300px) {
+ 
+  }
+
+  @media (min-width: 1101px) and (max-width: 1200px) {
+    width: 145%;
+    .explore-right{
+      margin-left: 50px;
+     }
+  }
+  @media (min-width: 1001px) and (max-width: 1100px) {
+
+  }
+  @media (min-width: 901px) and (max-width: 1000px) {
+
+  }
+  @media (min-width: 801px) and (max-width: 900px) {
+
+  }
+  @media (min-width: 701px) and (max-width: 800px) {
+    width: 245%;
+    .explore-right{
+      // margin-left: 10px;
+      position: relative;
+      margin-left: -1300px;
+      
+     }
+      .explore-left{
+      //  margin-left: -550px;
+      position: relative;
+      left: -20%;
+      }
+      .explore-center{
+        // margin-left: 20px;
+        position: relative;
+        left: -15%;
+      }
+  }
+  @media (min-width: 601px) and (max-width: 700px) {
+    width: 295%;
+    .explore-right{
+    position: relative;
+    margin-right: 450px;
+     }
+      .explore-left{
+     position: relative;
+     left: 50%;
+      }
+      .explore-center{
+       position: relative;
+       left: 50%;
+      }
+  }
+  @media (min-width: 501px) and (max-width: 600px) {
+// width: 350%;
+  }
+  @media (min-width: 401px) and (max-width: 500px) {
+
+  }
+  @media (min-width: 350px) and (max-width: 400px) {
+
+  }
 }
 .furnitureImages {
   margin-top: 70px;

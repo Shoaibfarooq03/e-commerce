@@ -48,6 +48,142 @@
         color: #000000;
       }
     }
+    @media (min-width: 1584px) and (max-width: 2437px) {
+      img {
+        width:130%;
+        height: 316px;
+      }
+     }
+     @media (min-width: 1500px) and (max-width: 1583px) {
+      img {
+        width:110%;
+        height: 316px;
+      }
+    }
+    @media (min-width: 1401px) and (max-width: 1500px) {
+      img {
+        width:115%;
+        height: 316px;
+      }
+    }
+    @media (min-width: 1301px) and (max-width: 1400px) {
+      img {
+        width:130%;
+        height: 316px;
+      }
+      h2{
+        margin-left: 80px;
+      }
+      .bold{
+        margin-left: 80px;
+      }
+    }
+    @media (min-width: 1201px) and (max-width: 1300px) {
+      img {
+        width:150%;
+        height: 316px;
+      }
+      h2{
+        margin-left: 150px;
+      }
+      .bold{
+        margin-left: 150px;
+      }
+    }
+  
+    @media (min-width: 1101px) and (max-width: 1200px) {
+      img {
+        width:165%;
+        height: 316px;
+      }
+      h2{
+        margin-left: 250px;
+      }
+      .bold{
+        margin-left: 250px;
+      }
+    }
+    @media (min-width: 1001px) and (max-width: 1100px) {
+      img {
+        width:190%;
+        height: 316px;
+      }
+      h2{
+        margin-left: 380px;
+      }
+      .bold{
+        margin-left: 380px;
+      }
+    }
+    @media (min-width: 901px) and (max-width: 1000px) {
+      img {
+        width:225%;
+        height: 316px;
+      }
+      h2{
+        margin-left: 480px;
+      }
+      .bold{
+        margin-left: 480px;
+      }
+    }
+    @media (min-width: 801px) and (max-width: 900px) {
+      img {
+        width:265%;
+        height: 316px;
+      }
+      h2{
+        margin-left: 620px;
+      }
+      .bold{
+        margin-left: 620px;
+      }
+    }
+    @media (min-width: 701px) and (max-width: 800px) {
+      img {
+        width:315%;
+        height: 316px;
+      }
+      h2{
+        margin-left: 580px;
+      }
+      .bold{
+        margin-left: 580px;
+      }
+      // .hifen{
+      //   margin-left: 750px;
+      // }
+    }
+    @media (min-width: 601px) and (max-width: 700px) {
+      img {
+        width:390%;
+        height: 316px;
+      }
+      // h2{
+      //   margin-left: 580px;
+      // }
+      // .bold{
+      //   margin-left: 580px;
+      // }
+    }
+    @media (min-width: 501px) and (max-width: 600px) {
+      img {
+        width:480%;
+        height: 316px;
+      }
+    }
+    @media (min-width: 401px) and (max-width: 500px) {
+      img {
+        width:620%;
+        height: 316px;
+      }
+    }
+    @media (min-width: 350px) and (max-width: 400px) {
+      img {
+        width:700%;
+        height: 316px;
+      }
+    }
   }
 
   .productdetails {
@@ -238,14 +374,7 @@
       }
     }
   }
-
-  @media (min-width: 1501px) and (max-width: 1585px) {
-   .types{
-    margin-top: -105px;
-   }
-
-  }
-  @media (min-width: 1401px) and (max-width: 1500px) {
+  @media (min-width: 1584px) and (max-width: 2437px) {
     .productdetails{
       position: relative;
 
@@ -253,235 +382,311 @@
     .types{
       margin-top: -280px;
      }
-     .producttotal{
+     .producttotal{ 
       margin-left: 40px;
       margin-top: -283px;
      }
      .productbody{
       position: relative;
-      margin-left: 70px;
+      margin-left: 00px;
+      bottom: 10%;
+     }
+  
+   }
+  @media (min-width: 1501px) and (max-width: 1585px) {
+    .productdetails{
+      position: relative;
+    }
+    .productheader{
+      position: relative;
+      left: -5%;
+    }
+    .types{
+      margin-top: -25px;
+      margin-left: -50px;
+     }
+     .producttotal{ 
+      margin-left: -90px;
+      margin-top: -283px;
+     }
+     .productbody{
+      position: relative;
+      margin-left: -90px;
+      bottom: 10%;
+     }
+
+  }
+  @media (min-width: 1401px) and (max-width: 1500px) {
+    .productdetails{
+      position: relative;
+    }
+    .productheader{
+      position: relative;
+      left: -7%;
+    }
+    .types{
+      margin-top: -25px;
+      margin-left: -70px;
+     }
+     .producttotal{ 
+      margin-left: -120px;
+      margin-top: -283px;
+     }
+     .productbody{
+      position: relative;
+      margin-left: -120px;
       bottom: 10%;
      }
   }
   @media (min-width: 1301px) and (max-width: 1400px) {
     .productdetails{
       position: relative;
-      right: 4%;
     }
-    .types{  
-      margin-left: -20px;
-      margin-top: -280px;
-    
+    .productheader{
+      position: relative;
+      left: -7%;
+    }
+    .types{
+      margin-top: -25px;
+      margin-left: -70px;
      }
-     .producttotal{
-      margin-left: 50px;
-      margin-top: -282px;
+     .producttotal{ 
+      margin-left: -120px;
+      margin-top: -283px;
      }
      .productbody{
       position: relative;
-      margin-left: 70px;
-      top: -8%;
+      margin-left: -120px;
+      bottom: 10%;
      }
   }
   @media (min-width: 1201px) and (max-width: 1300px) {
     .productdetails{
       position: relative;
-      right: 5%;
     }
-    .types{  
-      margin-left: -10px;
-      margin-top: -280px;
-    
+    .productheader{
+      position: relative;
+      left: -7%;
+    }
+    .types{
+      margin-top: -25px;
+      margin-left: -70px;
      }
-     .producttotal{
-      margin-left: 30px;
-      margin-top: -282px;
+     .producttotal{ 
+      margin-left: -120px;
+      margin-top: -283px;
      }
      .productbody{
       position: relative;
-      margin-left: 70px;
-      top: -8%;
+      margin-left: -120px;
+      bottom: 10%;
      }
   }
 
   @media (min-width: 1101px) and (max-width: 1200px) {
     .productdetails{
       position: relative;
-      right: 7%;
     }
-    .types{  
-      margin-left: -10px;
-      margin-top: -280px;
-    
+    .productheader{
+      position: relative;
+      left: -7%;
+    }
+    .types{
+      margin-top: -25px;
+      margin-left: -70px;
      }
-     .producttotal{
-      margin-left: 30px;
-      margin-top: -282px;
+     .producttotal{ 
+      margin-left: -120px;
+      margin-top: -283px;
      }
      .productbody{
       position: relative;
-      margin-left: 70px;
-      top: -8%;
+      margin-left: -120px;
+      bottom: 10%;
      }
   }
   @media (min-width: 1001px) and (max-width: 1100px) {
     .productdetails{
       position: relative;
-      right: 8%;
+      left: 3%;
     }
-    .types{  
-      margin-left: -10px;
-      margin-top: -280px;
-    
+    .productheader{
+      position: relative;
+      left: -7%;
+    }
+    .types{
+      margin-top: -25px;
+      margin-left: -70px;
      }
-     .producttotal{
-      margin-left: 30px;
-      margin-top: -282px;
+     .producttotal{ 
+      margin-left: -120px;
+      margin-top: -283px;
      }
      .productbody{
       position: relative;
-      margin-left: 70px;
-      top: -8%;
+      margin-left: -120px;
+      bottom: 10%;
      }
   }
   @media (min-width: 901px) and (max-width: 1000px) {
     .productdetails{
       position: relative;
-      right: 9%;
+      left: 3%;
     }
-    .types{  
-      margin-left: -10px;
-      margin-top: -280px;
-    
+    .productheader{
+      position: relative;
+      left: -7%;
+    }
+    .types{
+      margin-top: -25px;
+      margin-left: -70px;
      }
-     .producttotal{
-      margin-left: 30px;
-      margin-top: -282px;
+     .producttotal{ 
+      margin-left: -120px;
+      margin-top: -283px;
      }
      .productbody{
       position: relative;
-      margin-left: 70px;
-      top: -8%;
+      margin-left: -120px;
+      bottom: 10%;
      }
   }
   @media (min-width: 801px) and (max-width: 900px) {
     .productdetails{
       position: relative;
-      right: 12%;
+      left: 1%;
     }
-    .types{  
-      margin-left: -10px;
-      margin-top: -280px;
-    
+    .productheader{
+      position: relative;
+      left: -7%;
+    }
+    .types{
+      margin-top: -25px;
+      margin-left: -70px;
      }
-     .producttotal{
-      margin-left: 30px;
-      margin-top: -282px;
+     .producttotal{ 
+      margin-left: -120px;
+      margin-top: -283px;
      }
      .productbody{
       position: relative;
-      margin-left: 70px;
-      top: -8%;
+      margin-left: -120px;
+      bottom: 10%;
      }
   }
   @media (min-width: 701px) and (max-width: 800px) {
     .productdetails{
       position: relative;
-      right: 12%;
+      left: 1%;
     }
-    .types{  
-      margin-left: -10px;
-      margin-top: -280px;
-    
+    .productheader{
+      position: relative;
+      left: -7%;
+    }
+    .types{
+      margin-top: -25px;
+      margin-left: -70px;
      }
-     .producttotal{
-      margin-left: 30px;
-      margin-top: -282px;
+     .producttotal{ 
+      margin-left: -120px;
+      margin-top: -283px;
      }
      .productbody{
       position: relative;
-      margin-left: 70px;
-      top: -8%;
+      margin-left: -120px;
+      bottom: 10%;
      }
   }
   @media (min-width: 601px) and (max-width: 700px) {
     .productdetails{
       position: relative;
-      right: 12%;
+      left: 5%;
     }
-    .types{  
-      margin-left: -10px;
-      margin-top: -280px;
-    
+    .productheader{
+      position: relative;
+      left: -7%;
+    }
+    .types{
+      margin-top: -25px;
+      margin-left: -70px;
      }
-     .producttotal{
-      margin-left: 30px;
-      margin-top: -282px;
+     .producttotal{ 
+      margin-left: -120px;
+      margin-top: -283px;
      }
      .productbody{
       position: relative;
-      margin-left: 70px;
-      top: -8%;
+      margin-left: -120px;
+      bottom: 10%;
      }
   }
   @media (min-width: 501px) and (max-width: 600px) {
     .productdetails{
       position: relative;
-      right: 12%;
+      left: 7%;
     }
-    .types{  
-      margin-left: -10px;
-      margin-top: -280px;
-    
+    .productheader{
+      position: relative;
+      left: -7%;
+    }
+    .types{
+      margin-top: -25px;
+      margin-left: -70px;
      }
-     .producttotal{
-      margin-left: 30px;
-      margin-top: -282px;
+     .producttotal{ 
+      margin-left: -120px;
+      margin-top: -283px;
      }
      .productbody{
       position: relative;
-      margin-left: 70px;
-      top: -8%;
+      margin-left: -120px;
+      bottom: 10%;
      }
   }
   @media (min-width: 401px) and (max-width: 500px) {
     .productdetails{
       position: relative;
-      right: 12%;
+      left: 12%;
     }
-    .types{  
-      margin-left: -10px;
-      margin-top: -280px;
-    
+    .productheader{
+      position: relative;
+      left: -7%;
+    }
+    .types{
+      margin-top: -25px;
+      margin-left: -70px;
      }
-     .producttotal{
-      margin-left: 30px;
-      margin-top: -282px;
+     .producttotal{ 
+      margin-left: -120px;
+      margin-top: -283px;
      }
      .productbody{
       position: relative;
-      margin-left: 70px;
-      top: -8%;
+      margin-left: -120px;
+      bottom: 10%;
      }
   }
   @media (min-width: 350px) and (max-width: 400px) {
     .productdetails{
       position: relative;
-      right: 12%;
+      left: -5%;
     }
-    .types{  
-      margin-left: -10px;
-      margin-top: -280px;
-    
+    .productheader{
+      position: relative;
+      left: -7%;
+    }
+    .types{
+      margin-top: -25px;
+      margin-left: -70px;
      }
-     .producttotal{
-      margin-left: 30px;
-      margin-top: -282px;
+     .producttotal{ 
+      margin-left: -120px;
+      margin-top: -283px;
      }
      .productbody{
       position: relative;
-      margin-left: 70px;
-      top: -8%;
+      margin-left: -120px;
+      bottom: 10%;
      }
   }
 
@@ -532,5 +737,88 @@
       margin-left: 130px;
       margin-top: 0px;
     }
+  }
+  @media (min-width: 1584px) and (max-width: 2437px) {
+    .supportcontainer{
+      width: 100%;
+    }
+  
+   }
+  @media (min-width: 1501px) and (max-width: 1585px) {
+    .supportcontainer{
+      width: 95%;
+    }
+  
+  }
+  @media (min-width: 1401px) and (max-width: 1500px) {
+    .supportcontainer{
+      width: 100%;
+    }
+  
+  }
+  @media (min-width: 1301px) and (max-width: 1400px) {
+    .supportcontainer{
+      width: 108%;
+    }
+  
+  }
+  @media (min-width: 1201px) and (max-width: 1300px) {
+    .supportcontainer{
+      width: 118%;
+    }
+  }
+  @media (min-width: 1101px) and (max-width: 1200px) {
+    .supportcontainer{
+      width: 128%;
+    }
+  
+  }
+  @media (min-width: 1001px) and (max-width: 1100px) {
+    .supportcontainer{
+      width: 145%;
+    }
+  
+  }
+  @media (min-width: 901px) and (max-width: 1000px) {
+    .supportcontainer{
+      width: 160%;
+    }
+  
+  }
+  @media (min-width: 801px) and (max-width: 900px) {
+    .supportcontainer{
+      width: 174%;
+    }
+  
+  }
+  @media (min-width: 701px) and (max-width: 800px) {
+    .supportcontainer{
+      width: 197%;
+    }
+  
+  }
+  @media (min-width: 601px) and (max-width: 700px) {
+    .supportcontainer{
+      width: 233%;
+    }
+  
+  }
+  @media (min-width: 501px) and (max-width: 600px) {
+    .supportcontainer{
+      width: 280%;
+    }
+  
+  }
+  @media (min-width: 401px) and (max-width: 500px) {
+    .supportcontainer{
+      width: 350%;
+    }
+  
+  }
+  @media (min-width: 350px) and (max-width: 400px) {
+    .supportcontainer{
+      width: 380%;
+    }
+  
   }
 }

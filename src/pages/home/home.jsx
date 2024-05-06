@@ -73,7 +73,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <img src="/background.png" alt="" width={1583} height={652} />
+      <img src="/background.png" alt=""  />
       <div className="overlay">
         <div className="title">New Arrival</div>
         <div className="heading">Discover Our</div>
