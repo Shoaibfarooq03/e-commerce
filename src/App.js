@@ -9,9 +9,10 @@ import Detail from "./pages/detail-product/detail";
 import Comparison from "./pages/comparison/comparison";
 import Cart from "./pages/cart/cart";
 import Checkout from "./pages/checkout/checkout";
-import { CartProvider } from "./CartContext"; 
 import { Provider } from "react-redux";
 import store from "./app-redux/store";
+import Contact from "./pages/contact/contact";
+import Blog from "./pages/blog/blog";
 
 function App() {
   return (
@@ -19,7 +20,6 @@ function App() {
       <Provider store={store}> 
         <div className="App">
           <Navbar />
-          
           <Routes>
             <Route path="/" element={<Navigate to="/home" />} />
             <Route path="/home" element={<Home />} />
@@ -28,6 +28,8 @@ function App() {
             <Route path="/product-comparison" element={<Comparison />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/checkout" element={<Checkout />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/about" element={<Blog />} />
           </Routes>
           <Footer/>
         </div>
