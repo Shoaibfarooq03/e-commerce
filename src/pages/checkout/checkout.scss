@@ -23,7 +23,7 @@
 
     .breadcrumb {
       position: absolute;
-      top: 63%; /* Adjust the value to match the desired spacing */
+      top: 63%; 
       color: #666666;
       font-size: 18px;
       font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
@@ -150,21 +150,12 @@
       .bold{
         margin-left: 580px;
       }
-      // .hifen{
-      //   margin-left: 750px;
-      // }
     }
     @media (min-width: 601px) and (max-width: 700px) {
       img {
         width:420%;
         height: 316px;
       }
-      // h2{
-      //   margin-left: 580px;
-      // }
-      // .bold{
-      //   margin-left: 580px;
-      // }
     }
     @media (min-width: 501px) and (max-width: 600px) {
       img {
@@ -279,8 +270,8 @@
         }
       }
       @media (max-width: 1583px) {
-        left: 2%; // Adjusted left margin
-        width: calc(100% - 200px); // Adjusted width
+        left: 2%;
+        width: calc(100% - 200px);
       }
     }
 
@@ -619,7 +610,6 @@
     h3 {
       font-size: 20px;
       font-weight: 500;
-      // margin: 0;
       color: #898989;
       margin-bottom: 0px;
       margin-left: 130px;

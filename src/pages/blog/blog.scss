@@ -83,12 +83,6 @@
         height: 316px;
       }
     }
-    // @media (min-width: 1500px) and (max-width: 1583px) {
-    //   img {
-    //     width: 110%;
-    //     height: 316px;
-    //   }
-    // }
     @media (min-width: 1401px) and (max-width: 1500px) {
       img {
         width: 150%;
@@ -337,7 +331,6 @@
     .categoryblog {
       width: 680px;
       height: 700px;
-      // background-color: burlywood;
       position: relative;
       top: -101%;
       left: 62%;
@@ -400,7 +393,6 @@
         display: flex;
         width: 400px;
         height: 700px;
-        // background-color: aquamarine;
         margin-top: 100px;
 
         h3 {
@@ -414,8 +406,6 @@
           position: absolute;
           top: 95%;
           left: 6%;
-          // background-color: bisque;
-
           .p1 {
             display: flex;
             flex-direction: row;
@@ -426,7 +416,6 @@
               margin-left: -10px;
             }
             h4 {
-              // margin: 0;
               margin-top: 18px;
               margin-left: -30px;
               font-size: 17px;

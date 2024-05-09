@@ -1,12 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import "./detail.scss";
 const Detail = () => {
-
   const navigate = useNavigate();
 
-  const handleClick=()=>{
-    navigate("/product-comparison")
-  }
+  const handleClick = () => {
+    navigate("/product-comparison");
+  };
   const renderBadge = () => {
     return <div className="badge">-50%</div>;
   };
@@ -148,7 +147,6 @@ const Detail = () => {
             <p className="paragraph">
               Setting the bar as one of the loudest speakers in
               <br /> its class and it is fully balanced
-            
             </p>
             <div className="size">Size</div>
             <div className="sizetypes">
